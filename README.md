@@ -74,6 +74,7 @@ yarn test
 ## Publishing
 
 ```
+yarn build
 npm login
 npm publish
 ```

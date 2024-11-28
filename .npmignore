@@ -1,0 +1,24 @@
+src/
+
+# Environment files
+.envrc
+.envrc.sample
+
+# Development tools and configurations
+.direnv/
+.git/
+.gitignore
+.husky/
+flake.lock
+flake.nix
+biome.json
+
+# Build tools and output
+node_modules/
+vite.config.ts
+tsconfig.json
+yarn.lock
+
+# Exclude `.npmignore` itself
+.npmignore
+
