@@ -70,3 +70,10 @@ yarn build
 ```sh
 yarn test
 ```
+
+## Publishing
+
+```
+npm login
+npm publish
+```
