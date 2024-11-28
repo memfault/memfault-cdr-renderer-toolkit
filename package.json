@@ -1,6 +1,6 @@
 {
   "name": "@memfault/cdr-renderer-toolkit",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A toolkit to build React applications for rendering proprietary Custom Data Recordings (CDRs) within Memfault.",
   "author": "Memfault Inc.",
   "license": "MIT",
