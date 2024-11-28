@@ -7,7 +7,7 @@
   "homepage": "https://github.com/memfault/memfault-cdr-renderer-toolkit#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/memfault/memfault-cdr-renderer-toolkit.git"
+    "url": "git+https://github.com/memfault/memfault-cdr-renderer-toolkit.git"
   },
   "bugs": {
     "url": "https://github.com/memfault/memfault-cdr-renderer-toolkit/issues"
