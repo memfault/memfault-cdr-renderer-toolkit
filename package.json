@@ -1,0 +1,48 @@
+{
+  "name": "memfault-cdr-renderer-toolkit",
+  "version": "0.1.0",
+  "description": "A toolkit to build React applications for rendering proprietary Custom Data Recordings (CDRs) within Memfault.",
+  "author": "Memfault Inc.",
+  "license": "MIT",
+  "homepage": "https://github.com/memfault/memfault-cdr-renderer-toolkit#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/memfault/memfault-cdr-renderer-toolkit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/memfault/memfault-cdr-renderer-toolkit/issues"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "test": "vitest",
+    "lint": "biome check",
+    "prepare": "husky",
+    "format": "biome format .",
+    "type-check": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.0.1",
+    "@types/react": "^18.3.12",
+    "@vitejs/plugin-react": "^4.3.4",
+    "husky": "^9.1.7",
+    "jsdom": "^25.0.1",
+    "msw": "^2.6.6",
+    "react": "^18.3.1",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.1",
+    "vite-plugin-dts": "^4.3.0",
+    "vitest": "^2.1.6",
+    "zod": "^3.23.8"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "zod": "^3.20.0"
+  },
+  "dependencies": {
+    "@types/react-dom": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}
