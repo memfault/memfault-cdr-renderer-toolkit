@@ -1,13 +1,33 @@
-# Memfault CDR Renderer Toolkit
+# `@memfault/cdr-renderer-toolkit`
 
 A toolkit to build React applications meant to be rendered inside an `iframe`
 within Memfault that can render special or proprietary Custom Data Recordings.
 
-- [Development](#development)
-  - [Using the Nix package manager](#using-the-nix-package-manager)
-  - [Using other package managers](#using-other-package-managers)
-  - [Running tests](#running-tests)
-  - [Deploying](#deploying)
+## Usage
+
+```tsx
+import React from "react";
+import { useFragmentData } from "@memfault/cdr-renderer-toolkit";
+
+function App() {
+  const { data, error, isLoading, isExampleData, isExpired } = useFragmentData({
+    exampleDownloadUrl: "/path/to/example-data.bin",
+  });
+
+  if (isLoading) return <div>Loading...</div>;
+  if (error) return <div>Error: {error}</div>;
+
+  return (
+    <div>
+      {isExampleData && <p>Using example data</p>}
+      {isExpired && <p>Download URL has expired</p>}
+      <p>
+        Data size: {data ? `${data.byteLength} bytes` : "No data available"}
+      </p>
+    </div>
+  );
+}
+```
 
 ## Development
 
